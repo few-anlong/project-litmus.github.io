@@ -1,18 +1,11 @@
 html {
   font-size: 45px;
   
-  --phone-black-bg: #000;
-  --phone-black-text: #f2f2f2;
-  
   --phone-white-bg: #fff;
   --phone-white-text: #8b8b99;
   --phone-white-text-highlight: #1d1d1f;
   
-  --phone-green-bg: #263a2c;
-  --phone-green-text: #aae6b5;
-  --phone-green-text-highlight: #fff;
-  
-  --phone-width: 460px;
+  --phone-width: calc(50vh);
   --phone-offscreen: -720px;
 }
 
@@ -55,15 +48,6 @@ body {
   margin-bottom: var(--phone-offscreen);
 }
 
-.sticky-container .phone.black {
-  background-color: var(--phone-black-bg);
-  z-index: 10;
-}
-
-.sticky-container .phone.black h3 {
-  color: var(--phone-black-text);
-}
-
 .sticky-container .phone.white {
   background-color: var(--phone-white-bg);
   z-index: 20;
@@ -79,20 +63,6 @@ body {
   color: var(--phone-white-text-highlight);
 }
 
-.sticky-container .phone.green {
-  background-color: var(--phone-green-bg);
-  z-index: 30;
-  
-  clip-path: inset(100% 0px 0px 0px);
-}
-
-.sticky-container .iphone.green h3 {
-  color: var(--phone-red-text);
-}
-
-.sticky-container .iphone.green h3 span {
-  color: var(--phone-red-text-highlight);
-}
 
 .sticky-container.no-sticky {
   position: relative;
