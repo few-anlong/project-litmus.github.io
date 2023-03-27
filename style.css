@@ -1,19 +1,19 @@
 html {
   font-size: 44px;
   
-  --iphone-black-bg: #000;
-  --iphone-black-text: #f2f2f2;
+  --phone-black-bg: #000;
+  --phone-black-text: #f2f2f2;
   
-  --iphone-white-bg: #fff;
-  --iphone-white-text: #8b8b99;
-  --iphone-white-text-highlight: #1d1d1f;
+  --phone-white-bg: #fff;
+  --phone-white-text: #8b8b99;
+  --phone-white-text-highlight: #1d1d1f;
   
-  --iphone-red-bg: #263a2c;
-  --iphone-red-text: #aae6b5;
-  --iphone-red-text-highlight: #fff;
+  --phone-green-bg: #263a2c;
+  --phone-green-text: #aae6b5;
+  --phone-green-text-highlight: #fff;
   
-  --iphone-width: 460px;
-  --iphone-offscreen: -720px;
+  --phone-width: 460px;
+  --phone-offscreen: -720px;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
   overflow: hidden;
 }
 
-.sticky-container .iphone {
+.sticky-container .phone {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,55 +43,55 @@ body {
   left: 0;
 }
 
-.sticky-container .iphone h3 {
+.sticky-container .phone h3 {
   font-size: 1rem;
   margin: 0 0 60px 0;
   width: var(--iphone-width);
 }
 
-.sticky-container .iphone img {
+.sticky-container .phone img {
   display: block;
   width: var(--iphone-width);
-  margin-bottom: var(--iphone-offscreen);
+  margin-bottom: var(--phone-offscreen);
 }
 
-.sticky-container .iphone.black {
-  background-color: var(--iphone-black-bg);
+.sticky-container .phone.black {
+  background-color: var(--phone-black-bg);
   z-index: 10;
 }
 
-.sticky-container .iphone.black h3 {
-  color: var(--iphone-black-text);
+.sticky-container .phone.black h3 {
+  color: var(--phone-black-text);
 }
 
-.sticky-container .iphone.white {
-  background-color: var(--iphone-white-bg);
+.sticky-container .phone.white {
+  background-color: var(--phone-white-bg);
   z-index: 20;
   
   clip-path: inset(100% 0px 0px 0px);
 }
 
-.sticky-container .iphone.white h3 {
-  color: var(--iphone-white-text);
+.sticky-container .phone.white h3 {
+  color: var(--phone-white-text);
 }
 
 .sticky-container .iphone.white h3 span {
-  color: var(--iphone-white-text-highlight);
+  color: var(--phone-white-text-highlight);
 }
 
-.sticky-container .iphone.red {
-  background-color: var(--iphone-red-bg);
+.sticky-container .phone.green {
+  background-color: var(--phone-green-bg);
   z-index: 30;
   
   clip-path: inset(100% 0px 0px 0px);
 }
 
-.sticky-container .iphone.red h3 {
-  color: var(--iphone-red-text);
+.sticky-container .iphone.green h3 {
+  color: var(--phone-red-text);
 }
 
-.sticky-container .iphone.red h3 span {
-  color: var(--iphone-red-text-highlight);
+.sticky-container .iphone.green h3 span {
+  color: var(--phone-red-text-highlight);
 }
 
 .sticky-container.no-sticky {
@@ -99,7 +99,7 @@ body {
   overflow: visible;
 }
 
-.sticky-container.no-sticky .iphone {
+.sticky-container.no-sticky .phone {
   position: relative;
 }
 
