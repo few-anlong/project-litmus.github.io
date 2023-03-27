@@ -1,6 +1,11 @@
-html {
+h3 {
   font-size: 45px;
   background-color: #ffffff;
+}
+
+p {
+  font-size: 14px;
+  background-color: #cfcfcf;
 }
 
 body {
