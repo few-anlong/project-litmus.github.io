@@ -1,11 +1,11 @@
 html {
   font-size: 45px;
+  background-color: #ffffff;
 }
 
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #ffffff;
 }
 
 button {
