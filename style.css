@@ -1,12 +1,5 @@
 html {
   font-size: 45px;
-  
-  --phone-white-bg: #fff;
-  --phone-white-text: #8b8b99;
-  --phone-white-text-highlight: #1d1d1f;
-  
-  --phone-width: calc(50vh);
-  --phone-offscreen: -720px;
 }
 
 body {
@@ -14,67 +7,6 @@ body {
   height: calc(300vh);
   font-family: 'Montserrat', sans-serif;
   background-color: #000;
-}
-
-.sticky-container {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.sticky-container .phone {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.sticky-container .phone h3 {
-  font-size: 1rem;
-  margin: 0 0 60px 0;
-  width: var(--iphone-width);
-}
-
-.sticky-container .phone img {
-  display: block;
-  width: var(--iphone-width);
-  margin-bottom: var(--phone-offscreen);
-}
-
-.sticky-container .phone.white {
-  background-color: var(--phone-white-bg);
-  z-index: 20;
-  
-  clip-path: inset(100% 0px 0px 0px);
-}
-
-.sticky-container .phone.white h3 {
-  color: var(--phone-white-text);
-}
-
-.sticky-container .iphone.white h3 span {
-  color: var(--phone-white-text-highlight);
-}
-
-
-.sticky-container.no-sticky {
-  position: relative;
-  overflow: visible;
-}
-
-.sticky-container.no-sticky .phone {
-  position: relative;
-}
-
-.sticky-container.no-sticky .iphone.red {
-  padding-bottom: calc(var(--iphone-offscreen) * -1);
 }
 
 button {
