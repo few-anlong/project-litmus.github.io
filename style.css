@@ -4,9 +4,8 @@ html {
 
 body {
   margin: 0;
-  height: calc(100vh);
   font-family: 'Montserrat', sans-serif;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 button {
